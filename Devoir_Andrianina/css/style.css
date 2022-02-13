@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+  
+}
+.onglet{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #C55394;
+    padding: 20px 0 20px 0;
+    border: thick;
+    font-size: 15px;
+}
+.onglet a{
+    text-decoration: none;
+    color: #f3ecf0;
+    float: right;
+    font-size: 17px;
+    padding: 0px 17px;
+}
+.onglet a:hover{
+    background-color:  #EB43A3;
+    background-size: auto;
+}
+.titre{
+    font-family: 'Courgette', cursive;
+    color: white;
+    text-decoration: none;
+    margin: 2px 20px -20px 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+body{
+    background: url(../img/background.png);
+    background-attachment: fixed;
+    width: 100%;
+}
+.arc h1{
+    color: #C55394;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    text-align: left;
+    clear: both;
+    position: absolute;
+}
+
+.arc{
+   margin: 5% 0 0 35%;
+}
+
+.arc .superpose{
+    margin: 4% 0 0 5%;
+}
+
+
+h2{
+    color: #C55394;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    padding-left: 15px;
+
+}
+h2:before{
+    font-family: fa-star-o;
+}
+p{
+font-family: Arial, sans-serif;
+padding-left: 15px;
+}
+.bordure{
+    width: 70%; 
+    margin:-75px 0 20px 15%;
+    padding-bottom: 3%;
+    background-color: white;
+    border: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #cac2c6;
+}
+h3{
+    color: #C55394;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    padding-left: 15px;
+}
+footer{
+    background-color: #EB43A3;
+    padding: 0 0 45px 0;
+    margin-top: 60px;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 70%;
+    padding: 10px;
+    height: 300px; 
+}
+.bton{
+    background-color: #EB43A3;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.bton:hover{
+    background-color: #C55394;
+}
+.rech{
+ width: 30%;   
+ height:40px;
+}
+.container {
+    position: absolute;
+    font-family: Arial;
+    margin: 0 5px 45px 0;
+}
+.text-block {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding-left: 20%;
+    padding-right: 35%;
+    bottom: 5px;
+    border: 3px;
+    width: 45%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: -4px;
+}
