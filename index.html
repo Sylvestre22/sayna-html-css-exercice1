@@ -1,24 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta name="viewport" content="initial-scale=1">
+	<title>MyUnicorn</title>	
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="assets/img/icon.ico">
 <body>
-    <header>
-        <div>
-            <a href="#">MyUnicorn</a>
-        </div>
-        <nav>
-            <ul>
-                <li>Le principe</li>
-                <li>Nos licornes</li>
-                <li> Nous trouver</li>
-            </ul>
-        </nav>
-    </header>
-</body>
-</html>
+
+	<!-- MENU/NAVBAR -->
+	<nav class="navbar navbar-default" id="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">MyUnicorn</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#principe">Le principe</a></li>
+				<li><a href="#nos_licornes">Nos licornes</a></li>
+				<li><a href="#nous_trouver">Nous trouver</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- FIN MENU/NAVBAR -->
+
+	<!-- CONTENEUR -->
+	<main class="contenu">
+		
+		<div class="container">
+			<div class="titre">
+				<h1>Un jour, une licorne</h1>
+			</div>
+
+			<div class="main_content">
+				
+				<!-- PREMIÈRE PARTIE : Le principe -->
+				<section id="principe" class="principe">
+					<h2>
+						<i class="fa fa-star-o" aria-hidden="true"></i>Le principe
+					</h2>
+
+					<article>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.
+					</article>
+
+					<article>
+						Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.
+					</article>
+				</section>
+				<!-- FIN PREMIÈRE PARTIE : Le principe -->
+				
+				<!-- DEUXIÈME PARTIE : Nos licornes -->
+				<section id="nos_licornes" class="nos_licornes">
+					<h2>
+						<i class="fa fa-star-o" aria-hidden="true"></i>Nos licornes
+					</h2>
+
+					<div class="row licorne">
+						<figure class="zoom col-md-3">
+							<img src="assets/img/unicorns/photo1.jpg">
+							<figcaption>Lulu Confetty</figcaption>
+						</figure>
+						<figure class="zoom col-md-3">
+							<img src="assets/img/unicorns/photo2.jpg">
+							<figcaption>Lapillon Magik</figcaption>
+						</figure>
+						<figure class="zoom col-md-3">
+							<img src="assets/img/unicorns/photo3.jpg">
+							<figcaption>El Ninjacorn</figcaption>
+						</figure>
+						<figure class="zoom col-md-3">
+							<img src="assets/img/unicorns/photo4.jpg">
+							<figcaption>Sweety Candy</figcaption>
+						</figure>
+					</div>
+				</section>
+				<!-- FIN DEUXIÈME PARTIE : Nos licornes -->
+
+				<!-- TROISIÈME PARTIE : Nous trouver -->
+				<section id="nous_trouver" class="nous_trouver">
+					<h2>
+						<i class="fa fa-star-o" aria-hidden="true"></i>Nous trouver
+					</h2>
+					<div class="row">
+						<!-- CARTE GOOGLE MAPS -->
+						<div class="col-md-7 map-responsive">
+							<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=-18.907671866217118,%2047.526235195145624&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						</div>
+						<!-- FIN CARTE GOOGLE MAPS -->
+
+						<!-- ADRESSE/NEWSLETTER -->
+						<div class="col-md-5">
+							<h3>Notre élevage de licornes est situé au :</h3>
+							<p>
+								Analakely Market
+								<br>
+								Arabe Rahezavana, Antananarivo, Madagascar
+								<br>
+								01.22.45.67.90
+							</p>
+
+							<h3>Newsletter</h3>
+							<p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+
+							<form method="post" action="newsletter.php">
+								<div class="form-group">
+									<label for="newsletter"></label>
+									<input type="email" name="email" id="newsletter" class="form-control" placeholder="adresse@mail.fr" required="">
+								</div>
+								<div class="form-group">
+									<input type="submit" name="envoyer" class="btn btn-default" value="Valider">	
+								</div>
+							</form>
+							
+						</div>
+						<!-- FIN ADRESSE/NEWSLETTER -->
+
+					</div>
+				</section>
+				<!-- FIN TROISIÈME PARTIE : Nous trouver -->	
+				
+			</div>
+			<!-- FIN div class="main_content" -->
+			
+		</div>
+		<!-- FIN div class="container" -->
+
+	</main>
+	<!-- FIN CONTENEUR -->
+
+	<footer>
+		<div>
+			<p>2016 © Webforce 3</p>
+		</div>
+	</footer>
+	
+
+</body></html>
