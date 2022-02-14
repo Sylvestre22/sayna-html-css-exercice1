@@ -1,0 +1,133 @@
+/* Style de l'en tete de page*/
+/*fond du header*/
+ul {
+    background-color: #C55394;
+    overflow: hidden;
+}
+/*positiion des listes*/
+li{
+    float: left;
+}
+/*Style des liens sur le header*/
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 0px 2px;
+    text-decoration: none;
+}
+/*couleur des liens*/
+.zanne:hover:not(.active){
+    background-color: #EB43A3;
+}
+.active{
+    background-color: #EB43A3;
+}
+/*Propriete des barre de navigation du page*/
+.lova{
+    display: block;
+    float: right;
+    font-variant: small-caps;  
+}
+/*Zone de texte centrale*/
+section{
+    background-image: url("../img/background.png");
+    padding: 25px 0px 50px 0px;
+}
+/*Style des titres */
+h1 ,h2, h3{
+    font-family: 'Courgette', cursive ;
+    color: #EB43A3;
+    padding: 10px 10px 20px 0px;
+    font-weight: 800;
+}
+/*fond avec style du premier titre*/
+h1{
+    font-size: 35px;
+    width: 500px;
+    font-style: italic;
+    text-align: center;
+    padding: 50px 20px;
+    margin: auto;
+    background-image: url("../img/rainbow.png");
+}
+/* Fonds de la base*/
+.fenosoa{
+    width:900px;
+    background-color: white;
+    padding: 15px 25px 20px 50px;
+    margin: auto;
+    box-shadow: 0px 0px 50px black;
+}
+/*Style de l'image */
+/*Style de l'image quand la souri passe dessus*/
+.contenair{
+    display: inline-flex;
+    text-align: center;
+}
+/*box contenant l'image et son texte*/
+figure{
+    display: block;
+    width: 25%;
+    height: auto;
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+}
+/*Propriete de l'image par rapport au box qui la contienne*/
+img{
+    display: block;
+    width: 100%;
+    cursor:pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+/*Propriete du texte au dessous de l'image*/
+figcaption{
+    background-color:black;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    opacity: 0,15;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+img:hover {
+    transform: scale(1.2);
+}
+.rehetra{
+    display: inline-flex;
+    width: 100%;
+}
+/*Formulaire*/
+.information{
+    padding: 0px 0px 0px 10px;
+    width: 35%;
+    display: inline-block;
+}
+/*Style de l'email*/
+.entrer{
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 5px;    
+}
+/*Style du boutton valider*/
+.button{
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #C55394;
+    color: white;
+    cursor: pointer;
+}
+/*Style de footer*/
+footer{
+    background-color: #E577B5;
+    text-align:right;
+    color: white;
+    padding: 10px 25px 10px 0px;
+}
