@@ -1,0 +1,3 @@
+[submodule "exo-unicorne"]
+	path = exo-unicorne
+	url = https://github.com/krintsii/exo-unicorne.git
