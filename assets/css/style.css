@@ -1,26 +1,148 @@
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url("img/background.png");
 }
+/*---------------------------------------barre de navigation ou barre de menu --------------------------------*/
 header{
-    height:5vh;
-    padding: 1%;
-    color: white;
     background-color: #C55394;
+    position: fixed;
+    margin-top: -8px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    line-height: 40px;
+    z-index: 1000;
+ }
+ header p{
+    margin-top:5px;
+	padding: 0px 50px; 
+    font-size: 20px; 
+ }
+header p a{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Courgette', cursive;
 }
-header div{
-    float: left;
-    margin: 1em 0;
-}
-header > div a{
-    color: white;
+header p a:hover{
+    color: #fff;
     text-decoration: none;
 }
-header nav{
-    width: 25%;
-    float: right;
+nav{
+	float:right;
+	margin-top:-55px;
 }
-header ul > li{
-    padding: 0 2%;
-    display: inline;
+nav a {
+	text-decoration: none;
+	color:white;
+    padding:14px 20px 14px; 
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+nav a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #EB43A3; 
+}
+/*--------------------------------------------contenues--------------------------------------------*/
+
+/*-------------------l'arc en ciel et le tire "un jour;une licorne"------------------------*/
+.rainbow img{
+    width:365px;
+    transform: translateX(20px);
+    transform: translateY(20px);
+    margin-left: 450px;
+    margin-top: 50px;
+}
+.titre {
+    position: absolute;
+    top: 119px;
+    width: 100%;
+    text-align: center;
+    color: #C55394;
+    font-family: 'Courgette', cursive;
+}
+
+/*-------------------box shadow------------------------*/
+.box{
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	height: 1260px;
+	width: 800px;
+	margin-top: -50px;
+	border-radius: 10px;
+	margin-left: 238px;
+    background-color: #fff;
+}
+.autresTitres{
+    padding:35px 30px 0px 17px;  
+}
+.autresTitres h3{
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    color:#EB43A3;
+}
+.principe p{
+    font-size:15px;
+    font-family: Arial, sans-serif;
+}
+.row img{
+    width:180px; height:180px;
+}
+.ombre{
+	border-radius: 0;
+	border: none;
+	background-color: rgba(0,0,0,0.8);
+    padding-top: 50px;
+
+}
+.ombre {
+    position: absolute;
+    top: 155px;
+    width: 92%;
+    padding-top: 4px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Courgette', cursive;
+    font-size:14px;
+}
+iframe{
+    width: 440px;
+    height: 500px;
+}
+
+/*------- nous trouver avec le map ---------*/
+.formulaire{
+    color: #EB43A3;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin: 10px 0px 0px 70px;
+}
+.formulaire h4{
+    color: #333;
+    font-size: 15px;
+    font-family:  Arial, sans-serif;
+}
+input{
+    font-family:  Arial, sans-serif;
+}
+.send{
+    margin-top: 15px;
+	border:#EB43A3 solid 1px;
+	background-color:#EB43A3;
+	color:white;
+	width:70px;
+	height:35px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+/*------------------------------------------------------------footer ----------------------------------------------------------*/
+.foot{
+    position: fixed;
+    bottom: 0;
+    background-color: #E577B5;
+    color:#fff;
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding:0px 10px 0px 0px;
+    font-family:Arial, sans-serif;
 }
