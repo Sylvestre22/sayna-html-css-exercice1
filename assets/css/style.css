@@ -3,6 +3,8 @@ body
 	font-family: Arial, sans-serif;
 	color: #333;
 	background-image: url(../img/background.png);
+	margin:0;
+	padding:0;
 }
 
 /* NAV BAR */
