@@ -1,94 +1,183 @@
+/* FONT FAMILY: COURGETTE */
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+ 
+/* CONTENU */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  background-image: url(assets/img/background.png);
 }
 
-header {
-    height: 5vh;
-    padding: 1%;
-    color: white;
-    background-color: #C55394;
+/* BARRE DE NAVIGATION */
+.menu {
+  position: fixed;
+  background-color: #C55394;
+  padding: 22px;
+  width: 100%;
+  height: 1%;
+  top:0;
+  font-family: arial, sans-serif;
+  left:0%;
 }
 
-header div {
-    margin: 0;
-    float: left;
+/* LOGO */
+.MyUnicorn {
+  float: left;
+  margin-left: 2%;
+  font-size: 20px;
+  font-family: 'Courgette', cursive;
+  color: #FFF;
+  margin-top: -15px;
 }
 
-header div>h1 {
-    margin: 0;
+/* STYLE MENU */
+.menu ul{
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  margin-right: 3%;
+  margin-top: -6px;
+  color: rgb(230, 212, 212);
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+.menu ul li {
+  
+  display: inline-block;
+  margin-right: 20px;
+  color: #FFF;
+}
+.menu ul li a {
+color: #FFF;
+text-decoration: none;
 }
 
-header>div a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Courgette', cursive;
+/* HOVER */
+.menu ul li a:hover {
+  background-color: #EB43A3;
+  padding: 16px;
 }
 
-header nav {
-    width: 25%;
-    float: right;
+/* STYLE BORDURE CONTENU */
+#marge {
+  background-attachment: fixed;
+  background-color: white;
+  border: 0 solid black;
+  box-shadow: 0 2px 13px 0 rgb(58, 55, 55);
+  border-radius: 12px;
+  margin: -130px 200px 100px 200px;
 }
 
-header ul>li {
-    padding: 0 2%;
-    display: inline;
+/* STYLE TITRE PRINCIPALE */
+h1 {
+  background-image: url(assets/img/rainbow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  background-clip: border-box;
+  background-size: 550px;
+  font-family: 'Courgette', cursive;
+  color: #C55394;
+  text-align: center;
+  padding: 10%;
 }
 
-main {
-    padding-top: 5%;
-    background-image: url('../img/background.png');
+* {box-sizing: border-box;}
+/* STYLE DES LICORNES */
+.picture {
+  display: flex;
+  width: 98%;
+  padding: 0;
+  margin-left: -1.4%;
+}
+.photo1:hover {
+    transform: scale(1.2);
+}
+.photo2:hover {
+    transform: scale(1.2);
+}
+.photo3:hover {
+    transform: scale(1.2);
+}
+.photo4:hover {
+    transform: scale(1.2);
+}
+/* STYLE INFO & NEWSLETTER */
+.info {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 0;
+  padding-bottom: 50px;
 }
 
-main>div>p {
-    margin: 0;
-    padding: 2% 0;
-    color: #C55394;
-    text-align: center;
-    font-size: xx-large;
-    background-size: 20%;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    font-family: 'Courgette', cursive;
-    background-image: url('../img/rainbow.png');
+/* STYLE TEXTE INFO & NEWSLETTER */
+#No {
+  color: #EB43A3;
+  font-family: 'Courgette', cursive;
+  margin-right: -5%;
 }
 
-main>div.content {
-    margin: 0 20%;
-    padding: 2%;
-    border-radius: 15px;
-    background-color: white;
+/* STYLE TEXTE PARAGRAPHE */
+p {
+  width: available;
+  font-family: Arial, sans-serif;
+  padding: 0 27px;
+  color: #333;
+}
+#p1 {
+  margin-top: -50px;
 }
 
-main>div.content p.text {
-    font-size: small;
+/* STYLE NOM D'IMAGE */
+figcaption {
+  position: relative;
+  color: #FFF;
+  background-color: #333;
+  padding: 5px;
+  bottom: 32px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 128%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-main .col-unicorn figure {
-    margin: 0 0.5em;
+/* STYLE TEXTE FOOTER */
+#foot {
+text-align: right;
+font-size: 11px;
+color: #FFF;
+text-size-adjust: 6px;
 }
 
-main .col-unicorn figure figcaption{
-    margin: 0%;
-    padding: 2% 0;
-    color: white;
-    margin-top: -15%;
-    position: relative;
-    text-align: center;
-    background-color: rgb(51 51 51 / 60%)
+/* STYLE FOOTER */
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: #EB43A3;
+  width: 100%;
 }
 
-.row {
-    display: flex;
+/* POLICE TITRE PARAGRAPHE */
+#principe {
+  font-family: 'Courgette', cursive;
+  padding: 50px 25px;
+  color: #EB43A3;
+  right: 50px;
+  font-size: 28px;
 }
-
-.row>.col-unicorn img {
-    width: 100%;
+#licornes {
+  font-family: 'Courgette', cursive;
+  color: #EB43A3;
+  padding: 0px 22px;
+  right: 50px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
-
-.titlePink {
-    color: #C55394;
-    font-family: 'Courgette', cursive;
+#trouver {
+  font-family: 'Courgette', cursive;
+  color: #EB43A3;
+  padding: 0px 22px;
+  right: 50px;
+  font-size: 28px;
 }
