@@ -1,0 +1,151 @@
+@font-face{
+  font-family: courgette;
+  src: url(courgette/Courgette-Regular.ttf);
+}
+* {
+  /*padding: 0;
+  margin: 0;*/
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+header {
+  background-color: #c55394;
+  overflow: auto;
+}
+#titre1 a {
+  float: left;
+  font-family:"courgette", cursive;
+}
+.titre {
+  float: right;
+}
+
+.titre ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  font-family: "courgette", 
+}
+a:hover {
+  background: #eb43a3;
+}
+
+#menu {
+  color: #c55394;
+  text-align: center;
+  background-image: url(rainbow.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 5rem 0 2rem;
+}
+
+h1 {
+  color: #eb43a3;
+  font-family: "courgette", cursive;
+}
+
+#unicorn_container {
+  overflow: hidden;
+}
+#unicorn_container::after{
+  clear: both;
+  content: "";
+}
+figure {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  margin:0;
+}
+
+figure:hover {
+  transform: scale(1.2, 1.2 );
+  position: relative;
+  z-index:2;
+}
+img {
+  width: 100%;
+}
+
+figcaption {
+  background: #333;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  bottom: 1rem;
+  width: 100%;
+}
+h3 {
+  color: #eb43a3;
+  font-family: "courgette", cursive;
+}
+
+h5 {
+  color: #eb43a3;
+  font-family: "courgette", cursive;
+}
+body {
+  background-image: url(background.png);
+  margin: 0%;
+  padding: 0%;
+}
+#back {
+  background: #fff;
+  margin: auto;
+  border: 1px solid rgb(182, 156, 156);
+  width: 70%;
+  box-shadow: 0 0 1rem;
+  padding: 20px;
+  border-radius: 1%;
+}
+iframe {
+  float: left;
+  width: 55%;
+  height: 450px;
+  border:none;
+}
+
+
+.bas {
+  float: left;
+  padding: 15px;
+  width: 45%;
+}
+#addres::after{
+  clear: both;
+  content: "";
+  display: block;
+
+}
+footer {
+  background: #e577b5;
+  text-align: right;
+  margin-top: 2%;
+  padding: 1rem;
+}
+
+#PARA {
+  font-size: 10px;
+  color: #fff;
+}
+
+#validation{
+  color: #fff;
+  background:#eb43a3 ;
+  border: #eb43a3;
+  display: block;
+  margin-top: 3%;
+  border-radius: 3px;
+  
+}
