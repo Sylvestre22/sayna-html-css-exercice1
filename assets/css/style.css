@@ -1,26 +1,106 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-header{
-    height:5vh;
-    padding: 1%;
-    color: white;
+header {
+    position:fixed;
+    padding: 1.5vh;
     background-color: #C55394;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+} /* section barre de menu */
+#unicorn {
+    position: fixed;
+    font-family: 'courgette' ;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 0.2%;
+} /* Mise en style du menu MyUnicorn */
+#principe {
+    position: fixed;
+    font-family: arial;
+    font-size: 0.8em;
+    margin-left: 70%;
+} /* Mise en style du menu principe */
+#licorne {
+    position: fixed;
+    font-family: arial;
+    font-size: 0.8em;
+    margin-left: 78.5%;
+} /* Mise en style du menu licorne */
+#find-us {
+    font-family: arial;
+    font-size: 0.8em;
+    margin-left: 90%;
+} /* Mise en style du menu nous trouver */
+a.one, a.two {color:#FFF;
+       text-decoration: none;
 }
-header div{
-    float: left;
-    margin: 1em 0;
+a.two:hover {background-color: #EB43A3;
+    padding: 1.7vh;
+} /* link color and menu hover */
+#shadow {
+    margin: 7vh 3vw;
+    padding: 3% 2.5%;
+    background-color: #fff;
+    box-shadow: 0em 0em 1em 0em;
+    border-radius: 0.7em;
+} /* Propriete de la bordure externe */
+#title {
+    margin-top: 22vh;
+    margin-bottom: -30px;
+    margin-left: 49%;
+    font-family: 'Courgette';
+    font-size: 1.7em;
+    font-weight:bold;
+    color: #C55394;
+} /* Mise en style du titre */
+#rainbow {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -10.2%;
+} /* Arc en ciel */
+#head {
+    font-family: 'Courgette';
+    color: #EB43A3;
+    font-size: 1.3em;
+    font-style: italic;
+} /* Mise en style des 3 sous-titres */
+
+* {box-sizing: border-box;} 
+.row {display: flex;}
+.column {flex: 25%;
+        padding: 1em;}
+.column:hover {
+    transform: scale(1.1);
 }
-header > div a{
-    color: white;
-    text-decoration: none;
+.row1 {display: flex;}
+.column1 {flex: 50%;
+        padding: 1em;}
+/* Affichage lineaire des images et du frame */
+#end {
+    font-family: 'Courgette';
+    color: #C55394;
+    font-size: 1.2em;
+    font-weight: bolder;
+} /* Mise en style des autres titres */ 
+figcaption {
+    position:relative ;
+    padding: 0.5em;
+    color: #FFF;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    bottom: 3vh;
+    background: rgba(0, 0, 0, 0.7);
 }
-header nav{
-    width: 25%;
-    float: right;
-}
-header ul > li{
-    padding: 0 2%;
-    display: inline;
-}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #EB43A3;
+  color:#FFF;
+  text-align: right;
+  font-size: xx-small;
+} /* Footer */
+input[type=submit] {
+  color: #FFF;
+  background-color: #C55394;
+ }
