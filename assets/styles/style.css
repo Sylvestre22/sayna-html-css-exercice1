@@ -1,0 +1,270 @@
+*{     
+    /*on enleve le padding et margin par defaut de tout les elements 
+        et on fait en sorte que les tailles de paddings , bordures et du contenu sont comprisent 
+        dans le width et height du block avec box-sizing:border-box*/
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+            /*barre de navigation*/
+header{
+    height: 3.5em;
+    background-color: #C55394;
+    position: relative;
+}
+
+nav div, div#logo , nav ul li a{
+    color: #FFF;
+    
+}
+
+div#logo {
+    width: 20%;
+    height: 100%;
+}
+div#logo a {
+    font-family: 'Courgette', cursive;
+    font-size: 175%;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 2px;
+    width: 70%;
+    height: 100%;
+    font-style: italic;
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+
+}
+
+nav {
+    width: 80%;
+    height: 3em;
+    position: absolute;
+    right: .5%;
+    top: -.5px;
+}
+nav ul  {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 3.5em;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+nav ul li#active {
+    background-color: #EB43A3;
+}
+
+nav ul li:hover {
+    background-color: #EB43A3;
+}
+
+label, div.menu, input[type="checkbox"] {
+    display: none;
+}
+
+
+            /*contenu*/
+body {
+    background: url('images/rainbow.png') no-repeat 50% 3% ,url('images/background.png') repeat;
+}
+
+h1, div.intro p, h2 {
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+}
+
+h1 {
+    margin-bottom: .8em;
+    color: #C55394
+}
+
+.fa-star-o {
+    color: #C55394;
+}
+
+div.intro p {
+    color: #EB43A3;
+}
+
+div.intro , div.intro + p{
+    width: 70%;
+    height: 2em;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 180%;
+}
+
+/*la page blanche du milieu avec un ombre autour*/
+main {
+    background-color: #FFF;
+    margin: auto 16%;
+    margin-top: 15px;
+    margin-bottom: 3em;
+    padding: 1.5em;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #222;   
+}
+
+section {
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+}
+
+     /*Section principe : formatage de text des paragraphes*/
+#principe h1 + p {
+    margin-bottom: 1em;
+}
+
+#principe p {
+    font-size: 1.1em;
+}
+
+        /*partie images des licornes*/
+div.img-licornes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+figure{
+    width: 23%;
+    display: inline-block;
+    border-radius: 2px;
+    transition: .4s;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    position: relative;
+    bottom: 25px;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 0 0 2px 2px;
+    text-align: center;
+    font-size: 13px;
+    color: #FFF;
+    background-color:  rgba(51,51,51,0.9);
+}
+            /*effet zoom au survol de l'image*/
+figure:hover {
+    transform: scale(1.2);
+}
+
+    /*section NOUS TROUVER*/
+
+section#nous_trouver {
+    width: 100%;
+    margin: auto;
+}
+iframe , div.info-contact {
+    display: inline-block; /*pour qu'ils puissent se mettre de côte à côte*/
+    vertical-align: top;
+}
+
+iframe {
+    width: 60%;
+}
+
+div.info-contact {
+    width: 35%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+div.info-contact h2 {
+    font-size: 1.1em;
+    color : #EB43A3;
+    margin-bottom: .5em;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+div.contact {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 1.1em;
+}
+
+div.contact p {
+    font-size: 1em;
+    padding-bottom: .5em;
+}
+
+div.newsletter {
+    width: 100%;
+}
+
+div.newsletter p {
+    font-size: 1em;
+}
+
+form {
+    margin-top: .5em;
+}
+
+input[type="email"] {
+    padding: 5px;
+    height: 2.1em;
+    width: 90%;
+    color : #333;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    font-size: 1.1em;
+    color: #FFF;
+    margin-top: -0.5em;
+    padding: 7px 0px;
+    width: 6em;
+    text-align: center;
+    background-color: #C55394;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #EB43A3;
+}
+
+
+/*pieds la page --footer--*/
+
+footer {
+    background-color: #E577B5;
+    color: #FFF;
+    height: 3.5em;
+    position: relative;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 1.1em;
+    position: absolute;
+    right: 1em;
+    margin-top: 15px;
+}
+
+  
