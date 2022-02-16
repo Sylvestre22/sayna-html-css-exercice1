@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- 
+        Autre solution
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    -->
 </head>
+
 <body>
     <!-- Header du site web -->
     <header class="headerGlobal">
@@ -33,12 +39,16 @@
         <!-- Content -->
         <div class="content">
             <section>
-                <h2 class="titlePink">Le principe</h2>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
-                <p class="text">Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+                <h2 class="titlePink"><i class="fa-solid fa-star"></i>Le principe</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer
+                    facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo
+                    leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales.
+                    Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <p class="text">Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis
+                    mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
             </section>
             <section>
-                <h2 class="titlePink">Nos licornes</h2>
+                <h2 class="titlePink"><i class="fa-solid fa-star"></i>Nos licornes</h2>
                 <div class="row">
                     <div class="col-unicorn">
                         <figure>
@@ -66,7 +76,38 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <h2 class="titlePink"><i class="fa-solid fa-star"></i>Nos trouver</h2>
+
+                <div class="row">
+                    <div class="col-unicorn" style="width: 50%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.6369239461254!2d47.511384673034506!3d-18.907136513193393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e1975b5a0b7%3A0x6e3938c3fd90539d!2sF.J.K.M%20Antohamadinika-Sud%2C%20Antananarivo%2C%20Madagascar!5e0!3m2!1sfr!2sfr!4v1645013388664!5m2!1sfr!2sfr"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-unicorn" style="width: 50%; padding-left: 2%;" >
+                        <h4 class="titlePink">Notre élevage de licornes est situé au :</h4>
+                        <p>F.J.K.M Antohamadinika-Sud
+                            <br>Église protestante</p>
+                        <h4 class="titlePink">Newsletter</h4>
+                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                        <!-- 
+                            https:// sayna.academy?page=22 // GET (limite caract.) => Pagination
+                            https:// sayna.academy // POST 
+                            Action => Back
+                        -->
+                        <form method="POST" action="https://sayna.academy/newsletter">
+                            <input type="text" name="email" id="email" placeholder="votre@email.zoubida">
+                            <br>
+                            <button style="color: white; margin-top: 2%; padding: 1% 3%; background-color: #C55394; border-color: #C55394; border-radius: 5px;" type="submit">Valider</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+    <footer>
+        <p>© 2021 - Sayna</p>
+    </footer>
 </body>
+
 </html>

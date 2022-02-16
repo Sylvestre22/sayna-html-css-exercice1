@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'); /* https://fontawesome.com/search?q=star&m=free&s=solid%2Cbrands */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
+/* Header */
 header {
     height: 5vh;
     padding: 1%;
@@ -36,12 +37,15 @@ header ul>li {
     padding: 0 2%;
     display: inline;
 }
+/* END Header */
+
 
 main {
     padding-top: 5%;
+    padding-bottom: 5% !important;
     background-image: url('../img/background.png');
 }
-
+/* CSS */
 main>div>p {
     margin: 0;
     padding: 2% 0;
@@ -54,12 +58,38 @@ main>div>p {
     font-family: 'Courgette', cursive;
     background-image: url('../img/rainbow.png');
 }
+/* 
+SASS
+main{
+    div{
+        p {
+            margin: 0;
+            padding: 2% 0;
+            color: #C55394;
+            text-align: center;
+            font-size: xx-large;
+            background-size: 20%;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            font-family: 'Courgette', cursive;
+            background-image: url('../img/rainbow.png');
+        }
+    }
+} */
 
 main>div.content {
-    margin: 0 20%;
     padding: 2%;
+    margin: 0 20%;
     border-radius: 15px;
     background-color: white;
+    /* 
+        box-shadow: 
+        5px => Gauche Droit 
+        5px => Haut Bas
+        25px => Opacity 
+        black => Color
+     */
+    box-shadow: 5px 5px 25px black;
 }
 
 main>div.content p.text {
@@ -74,11 +104,24 @@ main .col-unicorn figure figcaption{
     margin: 0%;
     padding: 2% 0;
     color: white;
-    margin-top: -15%;
+    margin-top: -13.5%;
     position: relative;
     text-align: center;
-    background-color: rgb(51 51 51 / 60%)
+    background-color: rgb(51 51 51 / 90%)
 }
+
+
+footer {
+    height: 3vh;
+    padding: 1%;
+    color: white;
+    background-color: #C55394;
+}
+footer > p {
+    margin: 0;
+    text-align: end;
+}
+
 
 .row {
     display: flex;
@@ -91,4 +134,14 @@ main .col-unicorn figure figcaption{
 .titlePink {
     color: #C55394;
     font-family: 'Courgette', cursive;
+}
+
+/* 
+    Responsive => Adapter un contenu vis-a-vis d'un device (tel, telephone, mac, ordi)
+    Changement du css pour tout les ecran compris entre 0 et Xpx (730px)
+*/
+@media screen and (max-width: 730px){
+    .col-unicorn{
+        
+    }
 }
