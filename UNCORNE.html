@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorne</title>
+    <style>
+        body{
+            background: url(background.png);
+        }
+        @font-face {
+            font-family: 'font-1';
+            src: url(Courgette-Regular.ttf);
+        }
+        a{
+            float:right;
+            margin-top: 2px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 16px 0px;
+        }
+        a:hover{
+            background-color:#EB43A3 ;
+        }
+        nav{
+            margin-top: -8px;
+            margin-right: -8px;
+            margin-left: -8px;
+         background-color:  #C55394;
+         height: 53px;
+        }
+        .titre{
+            background: url(rainbow.png) no-repeat;
+            padding: 50px;
+            background-position: center;
+            height: 165px; ;
+            font-family: 'font-1', sans-serif ;
+            color: #C55394;
+        }
+        h2{
+            font-family:  'font-1', cursive;
+            text-align: center;
+            margin-top: -10%;
+            text-indent: -100px;
+            color: #C55394;
+        }
+        .box{
+            border: 0,5px solid black;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: -150px;
+            margin-left: 15%;
+            margin-bottom: 60px;
+            box-shadow: 1px 1px 9px black;
+            width: 70%;
+            height: 80%;
+            text-align: start;
+            padding-bottom: 20px;
+            
+        }
+        p{
+            font-family: Arial, sans-serif;
+            margin-right: 10px;
+        }
+        .pictures{ 
+            display: flex;
+            height: 100%;
+            width: 100%;
+            margin-left: 45px;
+            }
+            figure{
+               margin-left: -1px;
+            }
+            figcaption{
+             color: white;
+             background-color: #181414;
+             opacity: 0.8;
+            margin-top: -22px;
+            width: 180px;
+            text-align: center;
+            }
+           img{
+            width: 180px;
+           height: 180px;
+           padding-left: -500px;
+          
+
+          }
+       #NOS_LICORNES, #NOUS_TROUVER, #LE_PRINCIPE{
+        font-family: 'font-1', cursive;
+            color: #EB43A3;
+            margin-left: 2em;
+            font-size: 1.5em;
+            font-weight: bold;
+       }
+       iframe{
+           margin-left: 20px;
+           margin-bottom: 20px;
+       }
+       span{
+           float: left;
+           margin-top: -2px;
+            margin-left: 10px;
+            font-size: 1.5em;
+            color: white;
+           padding: 16px 0px;
+           font-family: 'font-1';
+       }
+       .pop, .actus{
+           color: #EB43A3;
+           font-family: 'font-1';
+       }
+       .ip{
+           width: 450px;
+           height: 450px;
+           margin-left: 500px;
+           margin-top: -490px;
+       }
+       .pip{
+           text-align: start;
+           width: 200px;
+       }
+       .non{
+        color: white;
+        background-color: #C55394; 
+        border: #C55394;
+        border-radius: 3px;
+        height: 30px;
+        width: 60px;
+       }
+       .non:hover{
+           background-color:#EB43A3 ;
+       }
+       footer{
+           margin-top: 20px;
+            margin-bottom: -8px;
+            margin-right: -8px;
+            margin-left: -8px;
+            padding-bottom: 50px;
+            background-color: #E577B5;
+       }
+        .footer{
+           float: right;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/6e9d55b338.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <header>
+        <nav>
+           <span>MyUnicorn</span>
+            <a href="#NOUS_TROUVER">NOUS TROUVER</a>
+            <a href="#NOS_LICORNES">NOS LICORNES</a>
+            <a href="#LE_PRINCIPE">LE PRINCIPE</a>
+        </nav>
+    </header>
+    <h1 class="titre" style="text-align: center;">Un jour, une licorne</h1>
+    
+    <div class="box">
+        <br>
+        <dl>
+           <dt  id="LE_PRINCIPE"><i class="fa fa-star-o"></i>Le principe</dt>
+            <dd style="margin-right: 10px;"> 
+               <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <p>   Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+            </dd> 
+        </dl>
+    <br>
+    <p id="NOS_LICORNES"><i class="fa fa-star-o"></i>Nos licornes</p>
+       <div class="pictures"> 
+           
+            <figure><img src="photo1.jpg" alt="licorne"><figcaption> Lulu Confetty</figcaption></figure>
+            <figure><img src="photo2.jpg" alt="licorne"><figcaption> Lapillon Magik </figcaption></figure>
+            <figure><img src="photo3.jpg" alt="licorne"><figcaption> El Ninjacorn</figcaption></figure>
+            <figure><img src="photo4.jpg" alt="licorne"><figcaption> Sweety Candy</figcaption></figure>
+            
+        </div>
+             <br>
+      <p id="NOUS_TROUVER"><i class="fa fa-star-o"></i>Nous trouver</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5352920118326!2d47.52404341434278!3d-18.907686212213353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e00bfe681a5%3A0x4c1b3b6f62c45fa2!2sAnalakely%20Market!5e0!3m2!1sfr!2smg!4v1644492154058!5m2!1sfr!2smg" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <section class="ip">
+        <h4 class="pop"; style="font-family: 'font-1';"> Notre élevage de licornes est situé au :</h4>
+        <p class="pip"> Analakely Market
+            Arabe Rahezavana, Antananarivo, Madagascar
+            01.22.45.67.90</p>
+         <h4 class="actus">Newsletter</h4>
+         <p> Abonnez-vous simplement à notre newsletter mensuelle !</p>
+         <form action="traitement.php" method="post">
+         <input type="email" id="email" placeholder="votre@email.fr">
+         <br><br>
+         <input type="submit" value="valider" class="non">
+        </form>
+      </section>
+    </div>
+
+    <footer>
+        <p class="footer">2016©webforce3</p>
+    </footer>
+</body>
+</html>
